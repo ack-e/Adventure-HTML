@@ -1,0 +1,59 @@
+body{
+  background-color: #87d3d3ef;
+  font-family: 'Gochi Hand', cursive;
+}
+
+#intro-text{
+  color: #1e55bb;
+}
+
+#first-section1{
+  text-align: center;
+  background-color: #87d3d3ef;
+}
+
+#first-section2{
+  text-align: center;
+  background-color: #bce7e7;
+  padding: 10px;
+}
+
+#part1{
+  background-color: #87d3d3ef;
+  padding: 10px;
+}
+
+#quote{
+  color: black;
+}
+
+#part1text{
+  color: black;
+  text-align: justify !important;
+}
+
+#night{
+  height: 300px;
+}
+
+#part2{
+  background-color: #87d3d3ef;
+  padding: 10px;
+}
+
+#part2text{
+  color: black;
+  text-align: justify !important;
+}
+
+#hutao{
+  height: 300px;
+}
+
+#student{
+  height: 300px;
+}
+
+.end{
+  font-size: 50px;
+}

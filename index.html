@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Choose Your Own Adventure Story</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div id="first-section1">
+      <h1 id="intro-text">New Normal</h1>
+      <h4 id="intro-text">An Interactive Story</h4>
+
+    </div>
+    <div id="first-section2">
+         <div class="center-allign container">
+           <h5 id="intro-text"><b>Click The Button to Begin</b></h5>
+           <button class="btn-large waves-effect waves-light" onclick="start()">Start</button>
+         </div>
+    </div>
+    <div class="scale-transition scale-out" id ="part1">
+      <div class="center-align container">
+        <img src="night.png" id="night">
+        <p id="part1text" class="flow-text">You have graduated from Primary School.  You are terrible at making friends as you have 0 social skills and very anti-social. You are anxious as you would have to make new friends.</p>
+        <p id="quote" class="flow-text">
+          <i><b>The holidays have ended and you are starting your first year of Secondary School. Sadly, all your friends ended up in different schools.</b></i></p>
+          <p id="part1text" class="flow-text">
+            You are terrible at making friends as you have 0 social skills and very anti-social. Its the <b>night of the last day of your holidays</b>. </p>
+            <button class="btn-large waves-effect waves-light" id="stayupbutton" onclick="stayup1()">Stay up </button>
+            <button class="btn-large waves-effect waves-light" id="sleepbutton" onclick="sleep1()">Go to sleep early </button>
+        </div>
+    </div>
+    
+    <div class="scale-transition scale-out" id ="part2">
+      <div class="center-align container">
+        <p id="part2text" class="flow-text"><i><b> You decide to spend the night watching some of your favourite youtubers and play some of your favourite games!</b></i></p>
+        <p id="quote" class="flow-text">
+          <i><b> You had fun at the start but as it got later and later, you start to get a headache and feel very tired. You finally decided to go to sleep at 3 am.</b></i></p>
+          <p id="part2text" class="flow-text"> You had terrible sleep.You woke up late and the worst thing was.. you were late for your <i><b>first day of school!</i></b> Feeling very stressed you decide to.. </p>
+          <button class="btn-large waves-effect waves-light" id="takebusbutton" onclick="stayup2()">Take Bus </button>
+          <button class="btn-large waves-effect waves-light" id="askparentbutton" onclick="stayup3()">Ask Parents </button>
+      </div>
+    </div>   
+    
+    <div class="scale-transition scale-out" id ="part3">
+      <div class="center-align container">
+        <img src="hutao.png" id="hutao">
+        <p id="part3text" class="flow-text"> You thought that sleeping early would be better as the first day of school will be starting tomorrow.<p>
+          <p id="quote" class="flow-text"> You <i><b>slept like a baby</i></b>. You had amazing rest and woke up earlier than usual. Feeling more refreshed, you happily got out of bed <i>which was unusual</i> and got ready for your <b><i>first day of school</b></i>. </p>
+          <p id="part3text" class="flow-text"> Your father drove you to school as it was raining heavily and you got to school early. Many other students were also early. Though, some students were a little soaked from the heavy downpour. </p>
+          <p id="part3text" class="flow-text"> An extroverted student approached you and started a conversation with you,"Hey!What class are you from :D" You tell them that you are from class <b>1A</b>. "Oh! I'm from that class too! I'm Hu Tao, by the way," She replied. You two started chatting away happily as you both have the same hobbies and interests.</p>
+          <p id="part3text" class="flow-text">"Oh! I'm from <b>1A</b> too! I'm <i><b>Hu Tao</i></b>, by the way," She replied. You two started chatting away happily as you both have the same hobbies and interests.
+          <p id="part3text" class="flow-text"> After school, you decide to ask Hu Tao to go to .. </p>
+          <button class="btn-large waves-effect waves-light" id="mallbutton" onclick="sleep2()">The Mall </button>
+          <button class="btn-large waves-effect waves-light" id="housebutton" onclick="sleep3()">Your House </button>
+      </div>
+    </div>
+    
+    <div class="scale-transition scale-out" id ="part4">
+        <div class="center-align container">
+          <p id="part4text" class="flow-text"> You do not want to disturb your parents and decide to take the bus.</p>
+          <p id="quote" class="flow-text">When you got ready, you realised that there was a <i><b>heavy downpour</i></b> and your parents had already left for work. You grab an umbrella and quickly rush to the bus stop.</p>
+          <p id="part4text" class="flow-text"> In the process, you got soaked. Your socks were all soaked and it was <i><b>really uncomfortable</i></b>. The bus was late as it was raining heavily.</p> 
+          <p id="part4text" class="flow-text"> When you finally got to school you were very late and  soaked. You got scolded by the teacher and felt <i><b>very embarrassed</i></b>. Everyone was staring at you. What a <i><b>'great'</i></b> first impression.</p>
+          <p id="part4text" class="flow-text">Your first day was <b><i>terrible</b></i> and you hope the next day will be better. <b><i>This time</b></i> you decide to sleep early, not wanting to be <b><i>late again</b></i>.</p>
+          <p id="part4text" class="end"><b><i>THE END</b></i></p>
+          <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href"> Click To Play Again </button>
+        </div>
+    </div>
+   
+    <div class="scale-transition scale-out" id ="part5">
+      <div class="center-align container">
+         <p id="part5text" class="flow-text"> You found out your parents had already <b>gone to work</b> and decided to <b>take the bus instead</b>.</p>
+         <p id="quote" class="flow-text"> When you got ready, you realised that there was a <i><b>heavy downpour</i></b>. You grab an umbrella and quickly rush to the bus stop.</p>
+         <p id="part5text" class="flow-text"> In the process, you got soaked. Your socks were all soaked and it was <i><b>really uncomfortable</i></b>. The bus was late as it was raining heavily.</p> 
+          <p id="part5text" class="flow-text"> When you finally got to school you were very late and  soaked. You got scolded by the teacher and felt <i><b>very embarrassed</i></b>. Everyone was staring at you. What a <i><b>'great'</i></b> first impression.</p>
+          <p id="part5text" class="flow-text">Your first day was <b><i>terrible</b></i> and you hope the next day will be better. <b><i>This time</b></i> you decide to sleep early, not wanting to be <b><i>late again</b></i>.</p>
+          <p id="part5text" class="end"><b><i>THE END</b></i></p>
+          <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href"> Click To Play Again </button>
+      </div>
+    </div>
+    
+    <div class="scale-transition scale-out" id ="part6">
+      <div class="center-align container">
+        <img src="student.png" id="student">
+         <p id="part6text" class="flow-text"> You ask Hu Tao if she would like to go to the mall with you."Sure!" She replies in her joyful tone.</p>
+         <p id="quote" class="flow-text"> You both head to the mall nearby your school. You both ate some delicious ice cream and had tons of fun.</p>
+         <p id="part6text" class="flow-text">You both see one of your classmates,Crystal, and ask,"Hey! Want to join us?" She agreed happily and you three had lots of fun running around the mall and getting lost together in the mall.</p>
+         <p id="part6text" class="flow-text">You had a great first day and even managed to make friends. You are very happy that everything went amazing.</p>
+         <p id="part6text" class="end"><b><i>THE END</b></i></p>
+         <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href"> Click To Play Again </button>
+      </div>
+    </div>
+    
+    <div class="scale-transition scale-out" id ="part7">
+      <div class="center-align container">
+        <p id="part7text" class="flow-text"> "Want to play some games at my <b><i>house</b></i>?"</p>
+        <p id="part7text" class="flow-text"> "Sure!" Hu Tao happily replied.</p>
+        <p id="quote" class="flow-text"> You both head to your house and play your favourite game 'Genshin Impact'. You both had lots of fun playing together and decide to hang out at your house once every week.</p>
+        <p id="part7text" class="flow-text">You had a great first day and even managed to make a friend. You are very happy that everything went amazing.</p>
+        <p id="part7text" class="end"><b><i>THE END</b></i></p>
+        <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href"> Click To Play Again </button>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
